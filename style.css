@@ -65,6 +65,15 @@ body{
     border-radius: 20px;
 }
 
+.alert h1{
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: whitesmoke;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 400px;
+}
 .todo{
     /* height: 50px; */
     width: 380px;

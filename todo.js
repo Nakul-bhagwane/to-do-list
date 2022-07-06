@@ -2,16 +2,20 @@ let add_Btn = document.getElementById("addBtn");
 let add_input = document.getElementById("addInput");
 
 
+
+
 add_Btn.addEventListener("click", () => {
     if (add_input.value == "") {
         alert("please write a task")
     }
     else {
         createElement();
+        document.querySelector(".alert").remove();
     }
 });
 
 createElement = () => {
+
     let todo_value = add_input.value;
 
     let todoDiv = document.createElement("div");
@@ -55,4 +59,10 @@ editTask = (e) => {
 
 deletTask = (e) => {
     e.parentElement.remove();
+
+    if (document.querySelector(".todosBox").children.length == 0) {
+        document.querySelector(".todosBox").innerHTML= `<div class="alert">
+                                                            <h1>no task added..please add a task</h1>
+                                                        </div>`
+    }    
 }
