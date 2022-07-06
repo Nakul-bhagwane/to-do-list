@@ -1,0 +1,223 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: rgba(0, 0, 0, 0.705);
+    height: auto;
+}
+.container{
+    /* height: 500px; */
+    width: 450px;
+    margin: 50px 0px;
+}
+
+.addBox{
+    background-color: yellow;
+    height: 60px;
+    /* width: 330px; */
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid orange;
+
+}
+.addBox input{
+    height: 40px;
+    width: 200px;
+    border-radius: 20px;
+    font-size: medium;
+}
+.addBox button{
+    height: 44px;
+    width: 100px;
+    margin: 0px 5px;
+    border-radius: 20px;
+    /* border: 2px solid green; */
+    background-color: rgba(0, 128, 0, 0.582);
+    color: white;
+    font-size: medium;
+}
+
+
+.todosBox{
+    /* background-color: orange; */
+    height: 450px;
+    /* margin: 10px 0px; */
+    border: 1px solid yellow;
+    border-top: 10px solid black;
+    overflow-y: scroll;
+}
+.todosBox::-webkit-scrollbar{
+    width: 5px;
+}
+.todosBox::-webkit-scrollbar-track{
+    border-radius: 20px;
+}
+.todosBox::-webkit-scrollbar-thumb{
+    background-color:yellow;
+    border-radius: 20px;
+}
+
+.todo{
+    /* height: 50px; */
+    width: 380px;
+    margin: 10px 30px;
+    background-color: yellow;
+    color: black;
+    /* text-align: center; */
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+}
+.taskText{
+    width: 200px;
+    overflow-y: scroll;
+    height: 80px;
+    font-size: 25px;
+    font-weight: 200;
+}
+.taskText::-webkit-scrollbar{
+    width: 5px;
+}
+.taskText::-webkit-scrollbar-track{
+    border-radius: 20px;
+}
+.taskText::-webkit-scrollbar-thumb{
+    background-color:orange;
+    border-radius: 20px;
+
+}
+
+.todo button{
+    height: 30px;
+    width: 50px;
+    color: white;
+    font-size: medium;
+}
+.edit{
+    background-color: green;
+}
+.delet{
+    background-color: red;
+}
+.editInput{
+    height: 30px;
+    margin: 20px 0px ;
+    font-size: medium;
+}
+
+
+@media only screen and (max-width:530px){
+    .container{
+        width: 350px;
+    }
+    .addBox input{
+        height: 30px;
+        width: 170px;
+        font-size: medium;
+    }
+    .addBox button{
+        height: 35px;
+        width: 75px;
+        font-size: 15px;
+    }
+  
+    .todo{
+    width: 300px;
+    margin: 10px 25px;
+    }
+    .taskText{
+        width: 170px;
+        font-size: 15px;
+    }
+    .todo button{
+        height: 25px;
+        width: 45px;
+        font-size: 10px;
+    }
+}
+
+
+@media only screen and (max-width:400px){
+    .container{
+        width: 315px;
+    }
+    .addBox input{
+        height: 30px;
+        width: 150px;
+        font-size: 15px;
+    }
+    .addBox button{
+        height: 35px;
+        width: 65px;
+        font-size: 15px;
+    }
+    .todosBox::-webkit-scrollbar{
+        width: 3px;
+    }
+    .todo{
+    width: 260px;
+    margin: 10px 25px;
+    }
+    .taskText{
+        width: 135px;
+        font-size: 15px;
+        height: 45px;
+    }
+    .taskText::-webkit-scrollbar{
+        width: 2px;
+    }
+    
+    .todo button{
+        height: 25px;
+        width: 44px;
+        font-size: 12px;
+    }
+}
+
+
+
+@media only screen and (max-width:300px){
+    .container{
+        width: 270px;
+    }
+    .addBox input{
+        height: 25px;
+        width: 130px;
+        font-size: 12px;
+    }
+    .addBox button{
+        height: 29px;
+        width: 60px;
+        font-size: 12px;
+    }
+    .todosBox::-webkit-scrollbar{
+        width: 2px;
+    }
+    .todo{
+    width: 220px;
+    margin: 10px 23px;
+    }
+    .taskText{
+        width: 115px;
+        font-size: 12px;
+        height: 40px;
+    }
+    .taskText::-webkit-scrollbar{
+        width: 2px;
+    }
+    
+    .todo button{
+        height: 20px;
+        width: 40px;
+        font-size: 8px;
+    }
+}
